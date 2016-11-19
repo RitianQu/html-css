@@ -77,4 +77,33 @@
           image 图像形式的提交按钮
           hidden 隐藏域
           file 文件域
-       
+     name 由用户自定义 控件的名称
+     value 由用户自定义 input控件中的默认文本值
+     size 正整数 input控件在页面中的显示宽度
+     readonly 该控件内容为只读（不能编辑修改）
+     disabled 第一次加载页面是禁用该控件（显示为灰色）
+     checked 定义选择控件默认被选中的项
+     maxlength 正整数 控件允许输入的最多字符数
+#### textarea控件
+     <textarea cols="列数" rows="行数">
+     ...
+     </textarea>
+#### select控件
+     <select>
+       <option>选项1</option>
+       <option>选项2</option>
+       <option>选项3</option>
+       ...
+     </select>
+     select size 指定下拉菜单的可见选项数（取值为正整数）
+            multiple 定义multiple="multiple"时，下拉菜单将具有多项选择的功能，方法为暗处ctrl键的同事选择多项
+     option selected 定义selected="selected"时，当前项即为默认选中项
+#### filedset组合控件
+     用于将form中的控件进行分组，filedset没有必须或唯一的属性
+     legend用于给filedset定义标题
+     <form action="" method="">
+      <filedset>
+       <legend>title</legend>
+       <input type="radio" id="radio">
+      </filedset>
+     </form>
