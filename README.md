@@ -99,9 +99,9 @@
             multiple 定义multiple="multiple"时，下拉菜单将具有多项选择的功能，方法为暗处ctrl键的同事选择多项
      option selected 定义selected="selected"时，当前项即为默认选中项
 #### filedset组合控件
-     用于将form中的控件进行分组，filedset没有必须或唯一的属性
+     用于将form中的控件进行分组，filedset没有必须或唯一的属性
      legend用于给filedset定义标题
-     <form action="" method="">
+     <form action="" method="">
      <filedset>
      <legend>title</legend>
      <input type="radio" id="radio">
