@@ -102,9 +102,9 @@
      用于将form中的控件进行分组，filedset没有必须或唯一的属性
      legend用于给filedset定义标题
      <form action="" method="">
-      <filedset>
-       <legend>title</legend>
-       <input type="radio" id="radio">
-      </filedset>
+     <filedset>
+     <legend>title</legend>
+     <input type="radio" id="radio">
+     </filedset>
      </form>
      
