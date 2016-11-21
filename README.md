@@ -164,16 +164,16 @@
      line-height属性用于设置行间距，就是行与行之间的距离，即字符的垂直间距，一般称为行高。line-height常用的属性值单位有三种
      分别为像素px，相对值em和百分比%，实际工作中使用最多的是像素px
 #### 文本装饰text-decoration
-     text-decoration属性用于设置文本的下划线，上划线，删除线等装饰效果，其可用属性值如下：
-     none：没有装饰（正常文本默认值）
-     underline：下划线
-     oveline：上划线
-     line-through：删除线
+     text-decoration属性用于设置文本的下划线，上划线，删除线等装饰效果，其可用属性值如下：
+     none：没有装饰（正常文本默认值）
+     underline：下划线
+     oveline：上划线
+     line-through：删除线
 ###  水平对齐方式text-align
-     text-align属性用于设置文本内容的水平对齐，相当于html中的align对齐属性。其可用属性值如下：
-     left：左对齐（默认值）
-     right：右对齐
-     center：居中对齐
+     text-align属性用于设置文本内容的水平对齐，相当于html中的align对齐属性。其可用属性值如下：
+     left：左对齐（默认值）
+     right：右对齐
+     center：居中对齐
 #### 
      
 
