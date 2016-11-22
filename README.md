@@ -255,6 +255,77 @@
      当优先级一致时，那么最后设置的有效
      在同一个元素上设置的属性当中，行内样式的设置最终有效
      id=100，class=10，tag=1
-     
+#### 背景的具体属性
+###  background-color：设置背景颜色，按照颜色的格式填写，比如red，#F00，rgb（255,0,0）
+     background-color:red;
+     background-color:#F00;
+###  background-image:设置背景图片，url（图片路径）
+     background-image:url("image/xxx.jpg");
+###  background-repeat:设置背景图片是否平铺，repeat,no-repeat,repeat-x,repeat-y.
+###  background-position:设置背景图片显示位置，可以使用top,bottom,left,right设置，也可以直接设置数值x轴y轴
+###  background-attachement：设置背景是否固定，fixed表示固定。
+#### 背景属性的综合写法
+###  background: color image repeat position attachement;
+     background:red url("image/xxx.png")repeat 10px 10px fixed;
+#### 行高
+     使用百分比，那么这个行高的基数为当前标签字体大小。
+     line-height:120%; 表示行高为当前字体的1.2被，子元素会继承父元素计算出的行高
+     直接使用px进行绝对设置
+     line-height：30px；直接设置行高为30px
+     使用em进行相对设置
+     line-height：1.5em； 设置行高为当前字体大小的1.5倍，子元素会继承父元素计算出的行高
+     使用不带单位的数值
+     line-height：1.5；设置行高因子为1.5，子元素会继承该因子而不是继承父元素行高
+#### 边框属性
+     边框颜色
+     border-top-width:上边框宽度
+     border-right-width:右边框宽度
+     border-bottom-width:下边框宽度
+     border-left-width:左边框宽度
+     border-width:上边框宽度[右边框宽度 下边框宽度 左边框颜色]
+     边框颜色：
+     border-top-color:上边框颜色
+     border-right-color:右边框颜色
+     border-bottom-color:下边框颜色
+     border-left-color:左边框颜色
+     border-color:上边框颜色【右边框颜色 下边框颜色 左边框颜色】
+     边框样式：
+     border-top-style:上边框样式
+     border-rignt-style:右边框样式
+     border-bottom-style:下边框样式
+     border-left-style:左边框样式
+     border-style:上边框样式【右边框样式 下边框样式 坐边框样式】
+     常用样式：solid dashed dotted double
+     注意：设置边框颜色时同样必须设置边框样式，如果未设置样式或设置为none，则其他的边框属性无效。
+     边框属性的综合设置：
+     border-top:宽度 样式 颜色
+     border-top:1px solid red;
+     border:宽度 样式 颜色
+     borderL:1px dotted yellow;
+     小技巧：border:0none;设置边框为0的方法。
+#### 内边距padding属性
+     padding-top:上内边距
+     padding-right：右内边距
+     padding-bottom：下内边距
+     padding-left:左内边距
+     综合设置：padding：上内边距【右内边距 下内边距 左内边距】
+#### 外边距margin
+     margin-top：上外边距
+     margin-right：右外边距
+     margin-bottom：下外边距
+     margin-left：左外边距
+     综合设置：margin:上外边距【右外边距 下外边距 左外边距】
+     注意：
+     1 外边距可以使用负值，使相邻元素重叠。
+     2 可能会出现外边距合并情况
+     3 为了方便操作，可以用×{margin：0；padding：0}取消浏览器的默认属性
+#### 解决嵌套元素的外边距合并
+     对于两个嵌套关系的块元素，如果父元素没有上内边距及边框，则父元素的上外边距会与子元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父      元素的上外边矿局为0，也会发生合并。
+     如果希望外边距不和并，可以为父元素定义1像素的上边框或上内边距。这里可以定义父元素的上边框为例，在父div的CSS样式中增加如下代码：
+     border：1px solid red; 或者padding-top:1px;
+#### 盒子宽度和高度的计算
+     Width=border-left+padding-left+width+padding-right+border-right
+     Height=border-top+padding-top+height+padding-bottom+border-bottom
+     一般请款下设置padding值都会影响div的大小，但是如果这个div没有设置宽度，而是继承了父亲的宽度，那么再次设置Padding值的时候不会影响这个div的宽      度
 
      
