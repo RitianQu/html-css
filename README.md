@@ -310,19 +310,19 @@
      padding-left:左内边距
      综合设置：padding：上内边距【右内边距 下内边距 左内边距】
 #### 外边距margin
-     margin-top：上外边距
-     margin-right：右外边距
-     margin-bottom：下外边距
-     margin-left：左外边距
-     综合设置：margin:上外边距【右外边距 下外边距 左外边距】
-     注意：
-     1 外边距可以使用负值，使相邻元素重叠。
+     margin-top：上外边距
+     margin-right：右外边距
+     margin-bottom：下外边距
+     margin-left：左外边距
+     综合设置：margin:上外边距【右外边距 下外边距 左外边距】
+     注意：
+     1 外边距可以使用负值，使相邻元素重叠。
      2 可能会出现外边距合并情况
-     3 为了方便操作，可以用×{margin：0；padding：0}取消浏览器的默认属性
+     3 为了方便操作，可以用×{margin：0；padding：0}取消浏览器的默认属性
 #### 解决嵌套元素的外边距合并
-     对于两个嵌套关系的块元素，如果父元素没有上内边距及边框，则父元素的上外边距会与子元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父      元素的上外边矿局为0，也会发生合并。
-     如果希望外边距不和并，可以为父元素定义1像素的上边框或上内边距。这里可以定义父元素的上边框为例，在父div的CSS样式中增加如下代码：
-     border：1px solid red; 或者padding-top:1px;
+     对于两个嵌套关系的块元素，如果父元素没有上内边距及边框，则父元素的上外边距会与子元素的上外边距发生合并，合并后的外边距为两者中的较大者，即使父      元素的上外边矿局为0，也会发生合并。
+     如果希望外边距不和并，可以为父元素定义1像素的上边框或上内边距。这里可以定义父元素的上边框为例，在父div的CSS样式中增加如下代码：
+     border：1px solid red; 或者padding-top:1px;
 #### 盒子宽度和高度的计算
      Width=border-left+padding-left+width+padding-right+border-right
      Height=border-top+padding-top+height+padding-bottom+border-bottom
